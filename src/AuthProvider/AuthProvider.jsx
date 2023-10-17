@@ -1,5 +1,5 @@
-import { createContext, useState } from "react";
-import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { createContext, useEffect, useState } from "react";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import app from "../Firebase/Firebase.config";
 
 export const AuthContext = createContext()
@@ -18,7 +18,7 @@ const AuthProvider = ({ children }) => {
 
 
     /**GooGle Pop Up Login**/
-    
+
     const googleLogin = () => {
         setLoading(true)
         console.log('Google login Function testing');
@@ -44,6 +44,27 @@ const AuthProvider = ({ children }) => {
     }
 
 
+    /** Update PassWord**/
+    const updatePassword = (displayName, photoURL) => {
+        return updateProfile(auth.currentUser, {
+            displayName: displayName,
+            photoURL: photoURL
+        })
+    }
+
+    /**Create Observer For Observe User**/
+    useEffect(() => {
+        const unSubscribe = onAuthStateChanged(auth, currentUser => {
+            console.log(currentUser);
+            setUser(currentUser)
+            setLoading(false)
+        })
+        return () => {
+            return unSubscribe
+        }
+    }, [auth])
+
+
 
 
 
@@ -54,7 +75,9 @@ const AuthProvider = ({ children }) => {
         googleLogin,
         createUser,
         signInUser,
-        logOutUser
+        logOutUser,
+        updatePassword,
+        setUser
     }
 
 
