@@ -5,15 +5,19 @@ import RootLayout from "../Root/RootLayout";
 import Home from "../Home/Home";
 import SignUp from "../Authentication/SignUp/SignUp";
 import SignIn from "../Authentication/SignIn/SignIn";
+import AddProduct from "../DataBase/AddProduct/AddProduct";
+import ErrorPage from "../component/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <RootLayout></RootLayout>,
+        errorElement:<ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader: () => fetch('/data.json')
             },
             {
                 path: '/login',
@@ -22,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path: '/register',
                 element: <SignUp></SignUp>
+            },
+            {
+                path: '/addProduct',
+                element: <AddProduct></AddProduct>
             }
         ]
     },

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Toyota",
+        "img": "https://i.ibb.co/XYxdFzW/kevin-bonilla-YPfnv-Lc3bb-Q-unsplash.jpg",
+        "description": "This is a sample description for Product A."
+    },
+    {
+        "id": 2,
+        "name": "Ford",
+        "img": "https://i.ibb.co/6FLGwDs/brad-r-xt9n-ZR-enkw-unsplash.jpg",
+        "description": "Product B is a high-quality item with many features."
+    },
+    {
+        "id": 3,
+        "name": "BMW",
+        "img": "https://i.ibb.co/tZ7CFG3/luca-david-b-QNl-Tb-Mcj64-unsplash.jpg",
+        "description": "Introducing Product C, your new favorite product."
+    },
+    {
+        "id": 4,
+        "name": "Mercedes-Benz",
+        "img": "https://i.ibb.co/7SL5MMh/aaron-huber-8q-YE6-LGHW-c-unsplash.jpg",
+        "description": "Product D is a versatile and stylish choice for all occasions."
+    },
+    {
+        "id": 5,
+        "name": "Tesla",
+        "img": "https://i.ibb.co/bXTWscx/charlie-deets-D1-W5-Qen-Bzl-U-unsplash.jpg",
+        "description": "Discover the elegance of Product E, a timeless classic."
+    },
+    {
+        "id": 6,
+        "name": "Honda",
+        "img": "https://i.ibb.co/HtBF7xm/tom-strecker-Yvey-TDT-m28-unsplash.jpg",
+        "description": "Product F is designed for those who demand the best in performance."
+    }
+]
