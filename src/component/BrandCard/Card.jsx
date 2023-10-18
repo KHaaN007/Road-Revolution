@@ -23,8 +23,6 @@ const Card = ({ brand }) => {
                                 <div className=" w-full flex place-content-center">
                                     <p className="capitalize font-serif font-bold text-5xl text-center shadow-2xl text-white mt-5 ">{brand.name}</p>
                                 </div>
-
-                                <button className="absolute left-1/4 bottom-4 bg-white text-black font-bold rounded-lg h-10 w-48">Details</button>
                             </div>
                         </div>
                     </Link>

@@ -1,15 +1,14 @@
-
+import  { useEffect } from "react"
 import Glide from "@glidejs/glide"
-import { useEffect } from "react"
 
-export default function SliderImg() {
+export default function SliderImg({brandDetail}) {
   useEffect(() => {
-    const slider = new Glide(".glide-05", {
+    const slider = new Glide(".glide-02", {
       type: "carousel",
       focusAt: "center",
       perView: 3,
-      autoplay: 3000,
-      animationDuration: 700,
+      autoplay: 1,
+      animationDuration: 4500,
       gap: 24,
       classNames: {
         nav: {
@@ -33,46 +32,41 @@ export default function SliderImg() {
 
   return (
     <>
-      {/*<!-- Component: Carousel with indicators outside --> */}
-      <div className="glide-05 relative w-full">
+      {/*<!-- Component: Carousel with indicators inside --> */}
+      <div className="glide-02 relative w-full lg:mx-auto mx-auto">
         {/*    <!-- Slides --> */}
         <div className="overflow-hidden" data-glide-el="track">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
             <li>
               <img
-                src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-03.jpg"
+                src={brandDetail.img1_url}
                 className="m-auto max-h-full w-full max-w-full"
               />
             </li>
             <li>
               <img
-                src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-04.jpg"
+                src={brandDetail.img2_url}
                 className="m-auto max-h-full w-full max-w-full"
               />
             </li>
             <li>
               <img
-                src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-05.jpg"
+                src={brandDetail.img3_url}
                 className="m-auto max-h-full w-full max-w-full"
               />
             </li>
             <li>
               <img
-                src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-01.jpg"
+                src={brandDetail.img4_url}
                 className="m-auto max-h-full w-full max-w-full"
               />
             </li>
-            <li>
-              <img
-                src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-02.jpg"
-                className="m-auto max-h-full w-full max-w-full"
-              />
-            </li>
+        
           </ul>
         </div>
         {/*    <!-- Indicators --> */}
         <div
-          className="flex w-full items-center justify-center gap-2"
+          className="absolute bottom-0 flex w-full items-center justify-center gap-2"
           data-glide-el="controls[nav]"
         >
           <button
@@ -105,9 +99,7 @@ export default function SliderImg() {
           </button>
         </div>
       </div>
-      {/*<!-- End Carousel with indicators outside --> */}
+      {/*<!-- End Carousel with indicators inside --> */}
     </>
   )
 }
-
-// export default SliderImg;

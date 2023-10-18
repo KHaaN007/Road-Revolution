@@ -57,13 +57,13 @@ const NavBar = () => {
                     <Link
                         to='/'
                         href="#"
-                        className="mr-4 block cursor-pointer py-1.5 font-sans text-2xl  font-medium leading-relaxed text-inherit antialiased"
+                        className="mr-4 block cursor-pointer py-1.5 font-sans text-3xl  font-medium leading-relaxed text-inherit antialiased"
                     >
-                        A p e x i f y
+                        Road Revolution
                     </Link>
 
                     <div className='flex justify-center items-center text-center'>
-                        <img className='w-12 ' src="https://i.ibb.co/9c8GW5X/Black-White-Minimalist-Logo-3-removebg-preview-removebg-preview.png" alt="" />
+                        <img className='w-20 ' src="https://i.ibb.co/0r5YFTs/Black-And-White-Modern-Car-Wash-Logo-removebg-preview.png" alt="" />
                     </div>
                 </div>
                 <div className="navbar-start">

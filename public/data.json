@@ -6,7 +6,9 @@
         "description": "This is a sample description for Product A.",
         "img1_url": "URL_OF_IMG1",
         "img2_url": "URL_OF_IMG1",
-        "img3_url": "URL_OF_IMG3"
+        "img3_url": "URL_OF_IMG3",
+        "img4_url": "URL_OF_IMG4",
+        "img5_url": "URL_OF_IMG5"
     },
     {
         "id": 2,
@@ -15,16 +17,20 @@
         "description": "Product B is a high-quality item with many features.",
         "img1_url": "URL_OF_IMG1",
         "img2_url": "URL_OF_IMG1",
-        "img3_url": "URL_OF_IMG3"
+        "img3_url": "URL_OF_IMG3",
+        "img4_url": "URL_OF_IMG4",
+        "img5_url": "URL_OF_IMG5"
     },
     {
         "id": 3,
         "name": "BMW",
         "img": "https://i.ibb.co/tZ7CFG3/luca-david-b-QNl-Tb-Mcj64-unsplash.jpg",
         "description": "Introducing Product C, your new favorite product.",
-        "img1_url": "URL_OF_IMG1",
-        "img2_url": "URL_OF_IMG1",
-        "img3_url": "URL_OF_IMG3"
+        "img1_url": "https://i.ibb.co/QXLwzKc/pexels-spicy-photographer-7387470.jpg",
+        "img2_url": "https://i.ibb.co/KxKdRs6/pexels-louis-gys-12040980.jpg",
+        "img3_url": "https://i.ibb.co/mvcJTHz/pexels-stephan-louis-7012891.jpg",
+        "img4_url": "https://i.ibb.co/QXLwzKc/pexels-spicy-photographer-7387470.jpg",
+        "img5_url": "https://i.ibb.co/DDRR5VD/andre-tan-l-Rr-Nccxr-Tf-Q-unsplash.jpg"
     },
     {
         "id": 4,
@@ -33,7 +39,9 @@
         "description": "Product D is a versatile and stylish choice for all occasions.",
         "img1_url": "URL_OF_IMG1",
         "img2_url": "URL_OF_IMG1",
-        "img3_url": "URL_OF_IMG3"
+        "img3_url": "URL_OF_IMG3",
+        "img4_url": "URL_OF_IMG4",
+        "img5_url": "URL_OF_IMG5"
     },
     {
         "id": 5,
@@ -42,7 +50,9 @@
         "description": "Discover the elegance of Product E, a timeless classic.",
         "img1_url": "URL_OF_IMG1",
         "img2_url": "URL_OF_IMG1",
-        "img3_url": "URL_OF_IMG3"
+        "img3_url": "URL_OF_IMG3",
+        "img4_url": "URL_OF_IMG4",
+        "img5_url": "URL_OF_IMG5"
     },
     {
         "id": 6,
@@ -51,6 +61,8 @@
         "description": "Product F is designed for those who demand the best in performance.",
         "img1_url": "URL_OF_IMG1",
         "img2_url": "URL_OF_IMG1",
-        "img3_url": "URL_OF_IMG3"
+        "img3_url": "URL_OF_IMG3",
+        "img4_url": "URL_OF_IMG4",
+        "img5_url": "URL_OF_IMG5"
     }
 ]

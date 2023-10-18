@@ -28,7 +28,7 @@ const Banner = () => {
         width: '100%',
         height: '100%',
         background: 'rgba(0, 0, 0, 0.5)', // Adjust the alpha (last) value for opacity
-      };
+    };
 
 
 
@@ -53,7 +53,7 @@ const Banner = () => {
 
             <div style={containerStyles}>
                 <video
-                className="hero-overlay bg-opacity-60"
+                    className="hero-overlay bg-opacity-60"
                     style={videoStyles}
                     autoPlay
                     loop
@@ -63,8 +63,10 @@ const Banner = () => {
                     Your browser does not support the video tag.
                 </video>
                 <div style={overlayStyles}></div>
-                <div className="absolute inset-0 flex items-center justify-center text-white text-8xl font-bold">
-                    Your Banner Content Here
+                <div className="absolute inset-0 flex items-center justify-center text-white lg:text-8xl font-mono font-bold">
+                    Road Revolution
+                    <br />
+                    Find Your Dream Road Master
                 </div>
             </div>
 
