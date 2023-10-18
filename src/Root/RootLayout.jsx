@@ -5,6 +5,7 @@ import NavBar from '../component/NavBar/NavBar';
 const RootLayout = () => {
     return (
         <div>
+            {/* <DarkMode></DarkMode> */}
             <NavBar></NavBar>
             <Outlet></Outlet>
             <Footer></Footer>

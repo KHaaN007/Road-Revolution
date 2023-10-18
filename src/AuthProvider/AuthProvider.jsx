@@ -38,9 +38,9 @@ const AuthProvider = ({ children }) => {
     }
 
     /**LogOut User**/
-    const logOutUser = () => {
+    const logoutUser = () => {
         setLoading(true)
-        signOut()
+        signOut(auth)
     }
 
 
@@ -75,9 +75,10 @@ const AuthProvider = ({ children }) => {
         googleLogin,
         createUser,
         signInUser,
-        logOutUser,
+        logoutUser,
         updatePassword,
-        setUser
+        setUser,
+        
     }
 
 
