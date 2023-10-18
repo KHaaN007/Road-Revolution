@@ -8,6 +8,8 @@ import SignIn from "../Authentication/SignIn/SignIn";
 import AddProduct from "../DataBase/AddProduct/AddProduct";
 import ErrorPage from "../component/ErrorPage/ErrorPage";
 
+import BrandDetails from "../component/BrandDetails/BrandDetails";
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -30,6 +32,11 @@ const router = createBrowserRouter([
             {
                 path: '/addProduct',
                 element: <AddProduct></AddProduct>
+            },
+            {
+                path:'/brand/:id',
+                element:<BrandDetails></BrandDetails>,
+                loader: () => fetch('/data.json')
             }
         ]
     },

@@ -19,44 +19,25 @@ const NavBar = () => {
             </li>
             <li>
                 <NavLink
-                    to="/booking"
+                    to="/addproduct"
                     className={({ isActive, isPending }) =>
                         isPending ? "pending" : isActive ? "bg-gray-300 block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased rounded-md" : "block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
                     }
                 >
-                    Booking
+                    Add Product
                 </NavLink>
             </li>
             <li>
                 <NavLink
-                    to="/about"
+                    to="/mycart"
                     className={({ isActive, isPending }) =>
                         isPending ? "pending" : isActive ? "bg-gray-300 block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased rounded-md" : "block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
                     }
                 >
-                    About Us
+                    My Cart
                 </NavLink>
             </li>
-            <li>
-                <NavLink
-                    to="/tellUs"
-                    className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "bg-gray-300 block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased rounded-md" : "block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
-                    }
-                >
-                    Tell Us
-                </NavLink>
-            </li>
-            <li>
-                <NavLink
-                    to="/register"
-                    className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "bg-gray-300 block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased rounded-md" : "block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
-                    }
-                >
-                    Register
-                </NavLink>
-            </li>
+     
 
             {
                 user && <ul className='flex items-center'>

@@ -33,7 +33,7 @@ export default function CarouselIndicatorsInside() {
   return (
     <>
       {/*<!-- Component: Carousel with indicators inside --> */}
-      <div className="glide-02 relative w-full">
+      <div className="glide-02 relative w-full lg:mx-auto mx-auto">
         {/*    <!-- Slides --> */}
         <div className="overflow-hidden" data-glide-el="track">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">

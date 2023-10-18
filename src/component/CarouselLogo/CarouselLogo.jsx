@@ -40,50 +40,50 @@ export default function CarouselLogo() {
                         <li className="flex items-center text-2xl">
                             <img
                                 src="https://i.ibb.co/8znvrc2/bmw-logo-1997-download.webp"
-                                className="m-auto h-20 max-h-full w-auto max-w-full"
+                                className="mx-auto h-20 max-h-full w-auto max-w-full"
                             />
                         </li>
                         <li>
                             <img
                                 src="https://i.ibb.co/09LvC94/tesla-logo-2004-download.webp"
-                                className="m-auto h-20 max-h-full w-auto max-w-full"
+                                className="mx-auto h-20 max-h-full w-auto max-w-full"
                             />
                         </li>
                        
                         <li>
                             <img
                                 src="https://i.ibb.co/RY0RT6h/jaguar-logo-2012-download.webp"
-                                className="m-auto h-20 max-h-full w-auto max-w-full"
+                                className="mx-auto h-20 max-h-full w-auto max-w-full"
                             />
                         </li>
                         <li>
                             <img
                                 src="https://i.ibb.co/1fXzRD0/hyundai-logo-2011-download.webp"
-                                className="m-auto h-20 max-h-full w-auto max-w-full"
+                                className="mx-auto h-20 max-h-full w-auto max-w-full"
                             />
                         </li>
                         <li>
                             <img
                                 src="https://i.ibb.co/vcxP4Fd/porsche-logo-2014-full-download.webp"
-                                className="m-auto h-20 max-h-full w-auto max-w-full"
+                                className="mx-auto h-20 max-h-full w-auto max-w-full"
                             />
                         </li>
                         <li>
                             <img
                                 src="https://i.ibb.co/bBHbpCP/toyota-logo-2005-download.webp"
-                                className="m-auto h-20 max-h-full w-auto max-w-full"
+                                className="mx-auto h-20 max-h-full w-auto max-w-full"
                             />
                         </li>
                         <li>
                             <img
                                 src="https://i.ibb.co/S7q8VVB/audi-logo-1995-download.webp"
-                                className="m-auto h-20 max-h-full w-auto max-w-full"
+                                className="mx-auto h-20 max-h-full w-auto max-w-full"
                             />
                         </li>
                         <li>
                             <img
                                 src="https://i.ibb.co/RSngsv3/honda-logo-2000-full-download.webp"
-                                className="m-auto h-20 max-h-full w-auto max-w-full"
+                                className="mx-auto h-20 max-h-full w-auto max-w-full"
                             />
                         </li>
                        
