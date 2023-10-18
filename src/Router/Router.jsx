@@ -9,6 +9,7 @@ import AddProduct from "../DataBase/AddProduct/AddProduct";
 import ErrorPage from "../component/ErrorPage/ErrorPage";
 
 import BrandDetails from "../component/BrandDetails/BrandDetails";
+import ProductCard from "../component/ProductCard/ProductCard";
 
 const router = createBrowserRouter([
     {
@@ -36,8 +37,14 @@ const router = createBrowserRouter([
             {
                 path:'/brand/:id',
                 element:<BrandDetails></BrandDetails>,
-                loader: () => fetch('/data.json')
-            }
+                loader: () => fetch('/data.json'),
+              
+            },
+            // {
+            //     path:'/productDetails',
+            //     element:<ProductCard></ProductCard>,
+            //     loader:()=>fetch('http://localhost:5000/product')
+            // }
         ]
     },
 ]);

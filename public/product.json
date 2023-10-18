@@ -1,0 +1,266 @@
+[
+    {
+      "ID": 1,
+      "Image": "https://wallpaperaccess.com/full/1401544.jpg",
+      "Name": "Toyota Camry",
+      "Brand Name": "Toyota",
+      "Type": "Sedan",
+      "Price": "$30,000",
+      "Short description": "A popular midsize sedan known for reliability and comfort.",
+      "Rating": 4.5,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 2,
+      "Image": "https://wallpaperaccess.com/full/2349349.jpg",
+      "Name": "Toyota RAV4",
+      "Brand Name": "Toyota",
+      "Type": "SUV",
+      "Price": "$35,000",
+      "Short description": "A versatile and practical SUV for various needs.",
+      "Rating": 4.3,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 3,
+      "Image": "https://wallpaperaccess.com/full/4954412.jpg",
+      "Name": "Toyota Prius",
+      "Brand Name": "Toyota",
+      "Type": "Hybrid",
+      "Price": "$28,000",
+      "Short description": "A fuel-efficient hybrid car with eco-friendly credentials.",
+      "Rating": 4.6,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 4,
+      "Image": "https://wallpaperaccess.com/full/5716390.jpg",
+      "Name": "Toyota Highlander",
+      "Brand Name": "Toyota",
+      "Type": "SUV",
+      "Price": "$40,000",
+      "Short description": "A family-friendly SUV with plenty of space and comfort.",
+      "Rating": 4.4,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 5,
+      "Image": "https://wallpaperaccess.com/full/3658134.jpg",
+      "Name": "Ford Explorer",
+      "Brand Name": "Ford",
+      "Type": "SUV",
+      "Price": "$40,000",
+      "Short description": "A family-friendly SUV with ample space and modern features.",
+      "Rating": 4.2,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 6,
+      "Image": "https://wallpaperaccess.com/full/3923920.jpg",
+      "Name": "Ford Mustang",
+      "Brand Name": "Ford",
+      "Type": "Sports Car",
+      "Price": "$45,000",
+      "Short description": "A classic American sports car with powerful performance.",
+      "Rating": 4.8,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 7,
+      "Image": "https://wallpaperaccess.com/full/2818732.jpg",
+      "Name": "Ford Focus",
+      "Brand Name": "Ford",
+      "Type": "Compact",
+      "Price": "$27,000",
+      "Short description": "An efficient and practical compact car for urban driving.",
+      "Rating": 4.0,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 8,
+      "Image": "https://wallpaperaccess.com/full/4129564.jpg",
+      "Name": "Ford Escape",
+      "Brand Name": "Ford",
+      "Type": "SUV",
+      "Price": "$33,000",
+      "Short description": "A compact SUV designed for daily adventures.",
+      "Rating": 4.1,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 9,
+      "Image": "https://wallpaperaccess.com/full/1615935.jpg",
+      "Name": "BMW 3 Series",
+      "Brand Name": "BMW",
+      "Type": "Sedan",
+      "Price": "$45,000",
+      "Short description": "A luxury sedan known for its sporty performance and elegance.",
+      "Rating": 4.7,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 10,
+      "Image": "https://wallpaperaccess.com/full/2061322.jpg",
+      "Name": "BMW X5",
+      "Brand Name": "BMW",
+      "Type": "SUV",
+      "Price": "$55,000",
+      "Short description": "A high-end SUV with cutting-edge technology and comfort.",
+      "Rating": 4.5,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 11,
+      "Image": "https://wallpaperaccess.com/full/4035863.jpg",
+      "Name": "BMW Z4",
+      "Brand Name": "BMW",
+      "Type": "Sports Car",
+      "Price": "$60,000",
+      "Short description": "A sporty convertible for driving enthusiasts.",
+      "Rating": 4.6,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 12,
+      "Image": "https://wallpaperaccess.com/full/1600627.jpg",
+      "Name": "BMW 5 Series",
+      "Brand Name": "BMW",
+      "Type": "Sedan",
+      "Price": "$50,000",
+      "Short description": "An executive sedan with a blend of performance and luxury.",
+      "Rating": 4.4,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 13,
+      "Image": "https://wallpaperaccess.com/full/2725979.jpg",
+      "Name": "Mercedes-Benz C-Class",
+      "Brand Name": "Mercedes-Benz",
+      "Type": "Sedan",
+      "Price": "$50,000",
+      "Short description": "An elegant and refined luxury sedan with advanced features.",
+      "Rating": 4.8,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 14,
+      "Image": "https://wallpaperaccess.com/full/2388559.jpg",
+      "Name": "Mercedes-Benz GLE",
+      "Brand Name": "Mercedes-Benz",
+      "Type": "SUV",
+      "Price": "$70,000",
+      "Short description": "A premium SUV offering a blend of comfort and performance.",
+      "Rating": 4.7,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 15,
+      "Image": "https://wallpaperaccess.com/full/2049701.jpg",
+      "Name": "Mercedes-Benz S-Class",
+      "Brand Name": "Mercedes-Benz",
+      "Type": "Luxury",
+      "Price": "$90,000",
+      "Short description": "The epitome of luxury with cutting-edge technology and unparalleled comfort.",
+      "Rating": 4.9,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 16,
+      "Image": "https://wallpaperaccess.com/full/195879.jpg",
+      "Name": "Mercedes-Benz A-Class",
+      "Brand Name": "Mercedes-Benz",
+      "Type": "Compact",
+      "Price": "$35,000",
+      "Short description": "A compact luxury car with a focus on style and technology.",
+      "Rating": 4.6,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 17,
+      "Image": "https://wallpaperaccess.com/full/486595.jpg",
+      "Name": "Tesla Model S",
+      "Brand Name": "Tesla",
+      "Type": "Electric",
+      "Price": "$80,000",
+      "Short description": "A high-performance electric car with industry-leading range.",
+      "Rating": 4.9,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 18,
+      "Image": "https://wallpaperaccess.com/full/2257170.jpg",
+      "Name": "Tesla Model Y",
+      "Brand Name": "Tesla",
+      "Type": "Electric",
+      "Price": "$55,000",
+      "Short description": "An electric SUV designed for practicality and innovation.",
+      "Rating": 4.7,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 19,
+      "Image": "https://wallpaperaccess.com/full/1152718.jpg",
+      "Name": "Tesla Model X",
+      "Brand Name": "Tesla",
+      "Type": "Electric",
+      "Price": "$70,000",
+      "Short description": "An all-electric SUV with advanced features and performance.",
+      "Rating": 4.8,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 20,
+      "Image": "https://wallpaperaccess.com/full/2080362.jpg",
+      "Name": "Honda Accord",
+      "Brand Name": "Honda",
+      "Type": "Sedan",
+      "Price": "$28,000",
+      "Short description": "A reliable and efficient sedan for daily commuting.",
+      "Rating": 4.4,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 21,
+      "Image": "https://wallpaperaccess.com/full/6848133.png",
+      "Name": "Honda CR-V",
+      "Brand Name": "Honda",
+      "Type": "SUV",
+      "Price": "$32,000",
+      "Short description": "A compact SUV known for versatility and comfort.",
+      "Rating": 4.3,
+      "Add button": "Add to Cart"
+    },
+    {
+      "ID": 22,
+      "Image": "https://wallpaperaccess.com/full/7153654.jpg",
+      "Name": "Honda Civic",
+      "Brand Name": "Honda",
+      "Type": "Compact",
+      "Price": "$23,000",
+      "Short description": "A fuel-efficient and practical compact car for city driving.",
+      "Rating": 4.5,
+      "Add button": "Add to Cart"
+    },
+    {
+        "ID": 23,
+        "Image": "https://wallpaperaccess.com/full/9409376.jpg",
+        "Name": "Honda HR-V",
+        "Brand Name": "Honda",
+        "Type": "Compact SUV",
+        "Price": "$25,000",
+        "Short description": "A compact SUV designed for urban adventures and practicality.",
+        "Rating": 4.2
+      },
+      {
+        "ID": 24,
+        "Image": "https://wallpaperaccess.com/full/8469002.jpg",
+        "Name": "Honda Odyssey",
+        "Brand Name": "Honda",
+        "Type": "Minivan",
+        "Price": "$40,000",
+        "Short description": "A versatile minivan with ample space for families and cargo.",
+        "Rating": 4.5
+      }
+      
+  ]
+  

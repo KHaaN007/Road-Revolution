@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import SliderImg from '../SliderImg/SliderImg';
+import ProductCard from '../ProductCard/ProductCard';
 
 const BrandDetails = () => {
     const [brandDetail, setbrandDetail] = useState({})
@@ -18,16 +19,19 @@ const BrandDetails = () => {
     }, [brands, id])
 
 
-   
+
     return (
         <div>
-            
+
             {
                 <SliderImg brandDetail={brandDetail}></SliderImg>
             }
             <h2 className='text-5xl'>{brandDetail.name}</h2>
             <img src={brandDetail.img} alt="" />
             <img src={brandDetail.img1_url} alt="" />
+            {
+                <ProductCard brandDetail={brandDetail}></ProductCard>
+            }
 
         </div>
     );

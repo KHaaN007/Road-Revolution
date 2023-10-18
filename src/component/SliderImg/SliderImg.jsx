@@ -8,7 +8,7 @@ export default function SliderImg({brandDetail}) {
       focusAt: "center",
       perView: 3,
       autoplay: 1,
-      animationDuration: 4500,
+      animationDuration: 1800,
       gap: 24,
       classNames: {
         nav: {
@@ -36,29 +36,35 @@ export default function SliderImg({brandDetail}) {
       <div className="glide-02 relative w-full lg:mx-auto mx-auto">
         {/*    <!-- Slides --> */}
         <div className="overflow-hidden" data-glide-el="track">
-          <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
+          <ul className="whitespace-no-wrap w-full h-full flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
             <li>
               <img
                 src={brandDetail.img1_url}
-                className="m-auto max-h-full w-full max-w-full"
+                className="m-auto max-h-full h-full w-full max-w-full"
               />
             </li>
             <li>
               <img
                 src={brandDetail.img2_url}
-                className="m-auto max-h-full w-full max-w-full"
+                className="m-auto max-h-full h-full w-full max-w-full"
               />
             </li>
             <li>
               <img
                 src={brandDetail.img3_url}
-                className="m-auto max-h-full w-full max-w-full"
+                className="m-auto max-h-full h-full w-full max-w-full"
               />
             </li>
             <li>
               <img
                 src={brandDetail.img4_url}
-                className="m-auto max-h-full w-full max-w-full"
+                className="m-auto max-h-full h-full w-full max-w-full"
+              />
+            </li>
+            <li>
+              <img
+                src={brandDetail.img5_url}
+                className="m-auto max-h-full h-full w-full max-w-full"
               />
             </li>
         

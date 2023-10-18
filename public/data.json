@@ -4,65 +4,65 @@
         "name": "Toyota",
         "img": "https://i.ibb.co/XYxdFzW/kevin-bonilla-YPfnv-Lc3bb-Q-unsplash.jpg",
         "description": "This is a sample description for Product A.",
-        "img1_url": "URL_OF_IMG1",
-        "img2_url": "URL_OF_IMG1",
-        "img3_url": "URL_OF_IMG3",
-        "img4_url": "URL_OF_IMG4",
-        "img5_url": "URL_OF_IMG5"
+        "img1_url": "https://wallpaperaccess.com/full/167380.jpg",
+        "img2_url": "https://wallpaperaccess.com/full/167390.jpg",
+        "img3_url": "https://wallpaperaccess.com/full/260430.jpg",
+        "img4_url": "https://wallpaperaccess.com/full/260433.jpg",
+        "img5_url": "https://wallpaperaccess.com/full/260438.jpg"
     },
     {
         "id": 2,
         "name": "Ford",
         "img": "https://i.ibb.co/6FLGwDs/brad-r-xt9n-ZR-enkw-unsplash.jpg",
         "description": "Product B is a high-quality item with many features.",
-        "img1_url": "URL_OF_IMG1",
-        "img2_url": "URL_OF_IMG1",
-        "img3_url": "URL_OF_IMG3",
-        "img4_url": "URL_OF_IMG4",
-        "img5_url": "URL_OF_IMG5"
+        "img1_url": "https://wallpaperaccess.com/full/20730.jpg",
+        "img2_url": "https://wallpaperaccess.com/full/326201.jpg",
+        "img3_url": "https://wallpaperaccess.com/full/326198.jpg",
+        "img4_url": "https://wallpaperaccess.com/full/1504840.jpg",
+        "img5_url": "https://wallpaperaccess.com/full/3068580.jpg"
     },
     {
         "id": 3,
         "name": "BMW",
         "img": "https://i.ibb.co/tZ7CFG3/luca-david-b-QNl-Tb-Mcj64-unsplash.jpg",
         "description": "Introducing Product C, your new favorite product.",
-        "img1_url": "https://i.ibb.co/QXLwzKc/pexels-spicy-photographer-7387470.jpg",
-        "img2_url": "https://i.ibb.co/KxKdRs6/pexels-louis-gys-12040980.jpg",
-        "img3_url": "https://i.ibb.co/mvcJTHz/pexels-stephan-louis-7012891.jpg",
-        "img4_url": "https://i.ibb.co/QXLwzKc/pexels-spicy-photographer-7387470.jpg",
-        "img5_url": "https://i.ibb.co/DDRR5VD/andre-tan-l-Rr-Nccxr-Tf-Q-unsplash.jpg"
+        "img1_url": "https://wallpaperaccess.com/full/56930.jpg",
+        "img2_url": "https://wallpaperaccess.com/full/115258.jpg",
+        "img3_url": "https://wallpaperaccess.com/full/115260.png",
+        "img4_url": "https://wallpaperaccess.com/full/115265.jpg",
+        "img5_url": "https://wallpaperaccess.com/full/115281.jpg"
     },
     {
         "id": 4,
         "name": "Mercedes-Benz",
         "img": "https://i.ibb.co/7SL5MMh/aaron-huber-8q-YE6-LGHW-c-unsplash.jpg",
         "description": "Product D is a versatile and stylish choice for all occasions.",
-        "img1_url": "URL_OF_IMG1",
-        "img2_url": "URL_OF_IMG1",
-        "img3_url": "URL_OF_IMG3",
-        "img4_url": "URL_OF_IMG4",
-        "img5_url": "URL_OF_IMG5"
+        "img1_url": "https://wallpaperaccess.com/full/475867.jpg",
+        "img2_url": "https://wallpaperaccess.com/full/475920.jpg",
+        "img3_url": "https://wallpaperaccess.com/full/475930.jpg",
+        "img4_url": "https://wallpaperaccess.com/full/475946.jpg",
+        "img5_url": "https://wallpaperaccess.com/full/475978.jpg"
     },
     {
         "id": 5,
         "name": "Tesla",
         "img": "https://i.ibb.co/bXTWscx/charlie-deets-D1-W5-Qen-Bzl-U-unsplash.jpg",
         "description": "Discover the elegance of Product E, a timeless classic.",
-        "img1_url": "URL_OF_IMG1",
-        "img2_url": "URL_OF_IMG1",
-        "img3_url": "URL_OF_IMG3",
-        "img4_url": "URL_OF_IMG4",
-        "img5_url": "URL_OF_IMG5"
+        "img1_url": "https://wallpaperaccess.com/full/1485618.jpg",
+        "img2_url": "https://wallpaperaccess.com/full/1485349.jpg",
+        "img3_url": "https://wallpaperaccess.com/full/486621.jpg",
+        "img4_url": "https://wallpaperaccess.com/full/1485633.jpg",
+        "img5_url": "https://wallpaperaccess.com/full/5586403.jpg"
     },
     {
         "id": 6,
         "name": "Honda",
         "img": "https://i.ibb.co/HtBF7xm/tom-strecker-Yvey-TDT-m28-unsplash.jpg",
         "description": "Product F is designed for those who demand the best in performance.",
-        "img1_url": "URL_OF_IMG1",
-        "img2_url": "URL_OF_IMG1",
-        "img3_url": "URL_OF_IMG3",
-        "img4_url": "URL_OF_IMG4",
-        "img5_url": "URL_OF_IMG5"
+        "img1_url": "https://wallpaperaccess.com/full/207016.jpg",
+        "img2_url": "https://wallpaperaccess.com/full/13643.jpg",
+        "img3_url": "https://wallpaperaccess.com/full/207028.jpg",
+        "img4_url": "https://wallpaperaccess.com/full/207061.jpg",
+        "img5_url": "https://wallpaperaccess.com/full/207076.jpg"
     }
 ]
