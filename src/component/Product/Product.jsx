@@ -8,7 +8,6 @@ const Product = ({ product }) => {
     }
 
 
-    console.log(product);
     return (
         <div className="">
 

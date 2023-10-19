@@ -21,7 +21,7 @@ const ProductCard = ({ brandDetail }) => {
 
     return (
 
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-2">
             {
                 filterProduct.map(product => <Product key={product.id} product={product}></Product>)
             }

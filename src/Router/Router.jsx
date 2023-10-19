@@ -11,6 +11,7 @@ import ErrorPage from "../component/ErrorPage/ErrorPage";
 import BrandDetails from "../component/BrandDetails/BrandDetails";
 import ProductDetails from "../component/ProductDetails/ProductDetails";
 import UpdateProduct from "../DataBase/UpdateProduct/UpdateProduct";
+import MyCart from "../component/MyCart/MyCart";
 
 const router = createBrowserRouter([
     {
@@ -47,8 +48,14 @@ const router = createBrowserRouter([
                 loader: ({ params }) => fetch(`http://localhost:5000/product/${params.id}`)
             },
             {
-                path:'/updateProduct',
-                element:<UpdateProduct></UpdateProduct>
+                path: '/updateProduct',
+                element: <UpdateProduct></UpdateProduct>
+            },
+            {
+                path: `/mycart`,
+                element: <MyCart></MyCart>,
+                loader: () =>fetch ('http://localhost:5000/cart')
+
             }
         ]
     },

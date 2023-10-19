@@ -40,6 +40,7 @@ const Banner = () => {
 
 
             <div style={containerStyles}>
+                
                 <video
                     className="w-auto"
                     // style={videoStyles}
