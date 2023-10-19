@@ -26,9 +26,6 @@ const BrandDetails = () => {
             {
                 <SliderImg brandDetail={brandDetail}></SliderImg>
             }
-            <h2 className='text-5xl'>{brandDetail.name}</h2>
-            <img src={brandDetail.img} alt="" />
-            <img src={brandDetail.img1_url} alt="" />
             {
                 <ProductCard brandDetail={brandDetail}></ProductCard>
             }

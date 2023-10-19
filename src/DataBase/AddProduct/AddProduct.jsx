@@ -68,10 +68,19 @@ const AddProduct = () => {
                             </label>
                         </div>
                         <div className="relative my-6">
-                            <input id="id-l01" type="text" name="brandName" placeholder="Brand name" className="relative w-full h-12 px-4 placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-emerald-500 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" />
-                            <label className="cursor-text peer-focus:cursor-default peer-autofill:-top-2 absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-required:after:text-pink-500 peer-required:after:content-['\00a0*'] peer-invalid:text-pink-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-emerald-500 peer-invalid:peer-focus:text-pink-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent">
-                               Brand Name
-                            </label>
+                            <div className="sm:col-span-3">
+                                <label for="brandName" className="block text-sm font-medium leading-6 text-gray-900">Brand Name</label>
+                                <div className="mt-2">
+                                    <select id="brandName" name="brandName" autocomplete="Brand-Name" className="relative w-full h-12 px-4 placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-emerald-500 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400">
+                                        <option>Toyota</option>
+                                        <option>Ford</option>
+                                        <option>BMW</option>
+                                        <option>Mercedes Benz</option>
+                                        <option>Tesla</option>
+                                        <option>Honda</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                         <div className="relative my-6">
                             <input id="id-l01" type="text" name="type" placeholder="type" className="relative w-full h-12 px-4 placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-emerald-500 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" />
