@@ -18,12 +18,12 @@ const ProductCard = ({ brandDetail }) => {
 
 
     const filterProduct = products.filter(product => product.brandName === name)
- 
+
     return (
 
         <div className="grid grid-cols-2 gap-2">
             {
-                filterProduct.map(product=><Product key={product.id} product={product}></Product>)
+                filterProduct.map(product => <Product key={product.id} product={product}></Product>)
             }
         </div>
     );

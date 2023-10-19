@@ -10,7 +10,7 @@ const Card = ({ brand }) => {
 
             <div className="relative inset-0 w-full h-full transform cursor-pointer hover:scale-90 transition duration-500">
 
-                <div className="h-full w-full  rounded-lg">
+                <div className="h-full w-full rounded-lg">
 
 
                     {/* <!-- component --> */}

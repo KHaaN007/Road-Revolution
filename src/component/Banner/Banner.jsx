@@ -34,22 +34,10 @@ const Banner = () => {
 
     return (
         <div>
-            {/* <video ref={videoRef} width="full" height="full" autoPlay>
-                <source src="https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/Automotive%20Life/bmw-explained-logo/exl-01-stage-hd9.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video> */}
 
-            {/* <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/Automotive%20Life/bmw-explained-logo/exl-01-stage-hd9.mp4)' }}>
-                <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content text-center text-neutral-content">
-                    <div className="max-w-md">
-                        <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                        <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button className="btn btn-primary">Get Started</button>
-                        <CarouselIndicatorsInside></CarouselIndicatorsInside>
-                    </div>
-                </div>
-            </div> */}
+
+
+
 
             <div style={containerStyles}>
                 <video
@@ -64,9 +52,15 @@ const Banner = () => {
                 </video>
                 <div style={overlayStyles}></div>
                 <div className="absolute inset-0 flex items-center justify-center text-white lg:text-8xl font-mono font-bold">
-                    Road Revolution
-                    <br />
-                    Find Your Dream Road Master
+
+                    <div className="font-extrabold text-3xl md:text-5xl [text-wrap:balance] bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 to-50% to-slate-200">Trusted by the most innovative minds in <span class="text-indigo-500 inline-flex flex-col">
+                        <ul className="block text-left leading-tight [&_li]:block">
+                            <li>Road </li>
+                                <hr />
+                                <li>Revolution</li>
+                        </ul>
+                    </span></div>
+
                 </div>
             </div>
 

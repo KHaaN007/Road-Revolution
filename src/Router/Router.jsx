@@ -9,13 +9,14 @@ import AddProduct from "../DataBase/AddProduct/AddProduct";
 import ErrorPage from "../component/ErrorPage/ErrorPage";
 
 import BrandDetails from "../component/BrandDetails/BrandDetails";
-import ProductCard from "../component/ProductCard/ProductCard";
+import ProductDetails from "../component/ProductDetails/ProductDetails";
+import UpdateProduct from "../DataBase/UpdateProduct/UpdateProduct";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <RootLayout></RootLayout>,
-        errorElement:<ErrorPage></ErrorPage>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -35,16 +36,20 @@ const router = createBrowserRouter([
                 element: <AddProduct></AddProduct>
             },
             {
-                path:'/brand/:id',
-                element:<BrandDetails></BrandDetails>,
+                path: '/brand/:id',
+                element: <BrandDetails></BrandDetails>,
                 loader: () => fetch('/data.json'),
-              
+
             },
-            // {
-            //     path:'/productDetails',
-            //     element:<ProductCard></ProductCard>,
-            //     loader:()=>fetch('http://localhost:5000/product')
-            // }
+            {
+                path: '/productDetails/:id',
+                element: <ProductDetails></ProductDetails>,
+                loader: ({ params }) => fetch(`http://localhost:5000/product/${params.id}`)
+            },
+            {
+                path:'/updateProduct',
+                element:<UpdateProduct></UpdateProduct>
+            }
         ]
     },
 ]);
