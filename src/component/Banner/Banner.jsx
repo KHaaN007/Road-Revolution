@@ -9,11 +9,11 @@ const Banner = () => {
     //     videoRef.current.play();
     // }, [])
 
-    const videoStyles = {
-        width: '100%',
-        height: '100vh',
-        objectFit: 'cover',
-    };
+    // const videoStyles = {
+    //     width: '100%',
+    //     height: '100vh',
+    //     objectFit: 'cover',
+    // };
 
     const containerStyles = {
         position: 'relative',
@@ -53,13 +53,13 @@ const Banner = () => {
 
             <div style={containerStyles}>
                 <video
-                    className="hero-overlay bg-opacity-60"
-                    style={videoStyles}
+                    className="w-auto"
+                    // style={videoStyles}
                     autoPlay
                     loop
                     muted
                 >
-                    <source className="hero-overlay bg-opacity-60" src="/public/bannerVideo.mp4" type="video/mp4" />
+                    <source className="" src="/public/bannerVideo.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div style={overlayStyles}></div>

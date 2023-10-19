@@ -8,7 +8,7 @@ export default function SliderImg({brandDetail}) {
       focusAt: "center",
       perView: 3,
       autoplay: 1,
-      animationDuration: 1800,
+      animationDuration: 1200,
       gap: 24,
       classNames: {
         nav: {

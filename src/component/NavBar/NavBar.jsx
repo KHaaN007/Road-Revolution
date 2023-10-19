@@ -57,7 +57,7 @@ const NavBar = () => {
                     <Link
                         to='/'
                         href="#"
-                        className="mr-4 block cursor-pointer py-1.5 font-sans text-3xl  font-medium leading-relaxed text-inherit antialiased"
+                        className="mr-4 block cursor-pointer py-1.5 font-sans lg:text-3xl md:text-3xl text-2xl  font-medium leading-relaxed text-inherit antialiased"
                     >
                         Road Revolution
                     </Link>
