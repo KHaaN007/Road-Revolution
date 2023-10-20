@@ -1,20 +1,27 @@
+import { useContext } from "react";
 import { Link, useLoaderData } from "react-router-dom";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
 const ProductDetails = () => {
 
     const details = useLoaderData();
-    // console.log(details);
 
 
+    const { user } = useContext(AuthContext)
 
     const handleAddCart = _id => {
         console.log(_id);
-
+        console.log();
+        const email = user.email
         const id = _id
 
+
+
+
         const productId = {
-            id
+            id,
+            email
         }
 
 

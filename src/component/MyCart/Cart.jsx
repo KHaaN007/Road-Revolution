@@ -1,10 +1,33 @@
-const Cart = ({ cartId, carts }) => {
-    console.log(cartId.id);
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import ShowCart from "./ShowCart";
+
+const Cart = ({ cartId }) => {
+    const { user } = useContext(AuthContext);
 
 
 
-    const addCart = carts.filter(cart => cart._id == cartId.id)
-    console.log(addCart);
+
+    const emailFilter = cartId.filter(cartEmail => cartEmail.email == user.email);
+
+
+
+
+    const [carts, setCarts] = useState([])
+
+
+    useEffect(() => {
+
+        fetch('http://localhost:5000/product')
+            .then(response => response.json())
+            .then(data => setCarts(data))
+
+    }, [])
+
+    console.log(carts);
+
+
+
 
 
 
@@ -12,18 +35,7 @@ const Cart = ({ cartId, carts }) => {
     return (
         <div>
             {
-                addCart.map(shoWaddCart => (<div key={shoWaddCart._id}>
-
-                    <div className="overflow-hidden bg-white rounded shadow-md text-slate-500 shadow-slate-200">
-                        <figure className="relative">
-                            <img src={shoWaddCart.image} alt="card image" className="aspect-video w-full" />
-                            <figcaption className="absolute bottom-0 left-0 w-full p-6 text-white bg-gradient-to-t from-slate-900">
-                                <h3 className="text-lg font-medium ">{shoWaddCart.brandName}</h3>
-                                <p className="text-sm opacity-75">{shoWaddCart.name}</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>))
+                emailFilter.map(showCart => <ShowCart key={showCart._id} showCart={showCart} carts={carts}></ShowCart>)
             }
         </div>
     );
