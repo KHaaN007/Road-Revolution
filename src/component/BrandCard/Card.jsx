@@ -20,7 +20,8 @@ const Card = ({ brand }) => {
                             <img className="object-cover w-full h-full transform duration-700 backdrop-opacity-100" src={brand.img} />
                             <div className="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
                             <div className="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0">
-                                <div className=" w-full flex place-content-center">
+                                <div className=" w-full flex gap-6 place-content-center items-center">
+                                    <img className="w-24 h-24 mt-5" src={brand.imageLogo} alt="" />
                                     <p className="capitalize font-serif font-bold text-5xl text-center shadow-2xl text-white mt-5 ">{brand.name}</p>
                                 </div>
                             </div>

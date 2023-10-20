@@ -1,6 +1,8 @@
 import { useContext } from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+
+import Swal from "sweetalert2";
 
 
 const ProductDetails = () => {
@@ -36,6 +38,19 @@ const ProductDetails = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+                if (data.insertedId) {
+                   
+                Swal.fire({
+                    title: 'Product Added Cart',
+                    showClass: {
+                        popup: 'animate__animated animate__fadeInDown'
+                    },
+                    hideClass: {
+                        popup: 'animate__animated animate__fadeOutUp'
+                    }
+                })
+
+                }
             })
 
     }
@@ -77,6 +92,7 @@ const ProductDetails = () => {
                 </div>
 
             </div>
+            
         </div>
     );
 };

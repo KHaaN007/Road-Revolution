@@ -9,20 +9,12 @@ const MyCart = () => {
 
 
 
-        console.log(cartdata);
-
-
-
-
-
-
-
  
 
 
 
     return (
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+        <div>
              <Cart   cartId={cartdata}></Cart>
             
             

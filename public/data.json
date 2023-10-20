@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "Toyota",
+        "imageLogo": "https://i.ibb.co/bBHbpCP/toyota-logo-2005-download.webp",
         "img": "https://i.ibb.co/XYxdFzW/kevin-bonilla-YPfnv-Lc3bb-Q-unsplash.jpg",
         "description": "This is a sample description for Product A.",
         "img1_url": "https://wallpaperaccess.com/full/167380.jpg",
@@ -13,6 +14,7 @@
     {
         "id": 2,
         "name": "Ford",
+        "imageLogo": "https://i.ibb.co/YBQQ9F9/1272633-removebg-preview.png",
         "img": "https://i.ibb.co/6FLGwDs/brad-r-xt9n-ZR-enkw-unsplash.jpg",
         "description": "Product B is a high-quality item with many features.",
         "img1_url": "https://wallpaperaccess.com/full/20730.jpg",
@@ -24,6 +26,7 @@
     {
         "id": 3,
         "name": "BMW",
+        "imageLogo": "https://i.ibb.co/8znvrc2/bmw-logo-1997-download.webp",
         "img": "https://i.ibb.co/tZ7CFG3/luca-david-b-QNl-Tb-Mcj64-unsplash.jpg",
         "description": "Introducing Product C, your new favorite product.",
         "img1_url": "https://wallpaperaccess.com/full/56930.jpg",
@@ -35,6 +38,7 @@
     {
         "id": 4,
         "name": "Mercedes Benz",
+        "imageLogo": "https://i.ibb.co/S5qW6Zn/b92bf19612e524ac1f9d5e998770eba7-removebg-preview.png",
         "img": "https://i.ibb.co/7SL5MMh/aaron-huber-8q-YE6-LGHW-c-unsplash.jpg",
         "description": "Product D is a versatile and stylish choice for all occasions.",
         "img1_url": "https://wallpaperaccess.com/full/475867.jpg",
@@ -46,6 +50,8 @@
     {
         "id": 5,
         "name": "Tesla",
+        
+        "imageLogo": "https://i.ibb.co/09LvC94/tesla-logo-2004-download.webp",
         "img": "https://i.ibb.co/bXTWscx/charlie-deets-D1-W5-Qen-Bzl-U-unsplash.jpg",
         "description": "Discover the elegance of Product E, a timeless classic.",
         "img1_url": "https://wallpaperaccess.com/full/1485618.jpg",
@@ -57,6 +63,7 @@
     {
         "id": 6,
         "name": "Honda",
+        "imageLogo": "https://i.ibb.co/RSngsv3/honda-logo-2000-full-download.webp",
         "img": "https://i.ibb.co/HtBF7xm/tom-strecker-Yvey-TDT-m28-unsplash.jpg",
         "description": "Product F is designed for those who demand the best in performance.",
         "img1_url": "https://wallpaperaccess.com/full/207016.jpg",

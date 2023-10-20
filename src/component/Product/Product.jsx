@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
 
-    const update = e => {
-        e.preventDefault()
-        console.log('cliked');
-    }
+    // const update = e => {
+    //     e.preventDefault()
+    //     console.log('cliked');
+    // }
 
 
     return (
@@ -43,8 +43,8 @@ const Product = ({ product }) => {
                                             </p>
 
                                             <div className="bottom-0 flex absolute p-2 right-0">
-                                                <Link>
-                                                    <button onClick={update} className="btn inline-block px-6 py-3 mr-3 font-bold text-center text-white uppercase align-middle transition-all rounded-lg cursor-pointer bg-gradient-to-tl from-purple-700 to-pink-500 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md btn-sm bg-150 bg-x-25 hover:scale-102 active:opacity-85 hover:shadow-soft-xs">Update</button>
+                                                <Link to={`/updateProduct/${product._id}`}>
+                                                    <button className="btn inline-block px-6 py-3 mr-3 font-bold text-center text-white uppercase align-middle transition-all rounded-lg cursor-pointer bg-gradient-to-tl from-purple-700 to-pink-500 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md btn-sm bg-150 bg-x-25 hover:scale-102 active:opacity-85 hover:shadow-soft-xs">Update</button>
                                                 </Link>
                                                 <Link to={`/productdetails/${product._id}`}>
                                                     <button className="opacity-50 bg-gray-100 hover:bg-sky-200 hover:text-white text-sm font-bold pl-2 rounded inline-flex items-center">

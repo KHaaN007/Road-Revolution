@@ -1,7 +1,7 @@
-import  { useEffect } from "react"
+import { useEffect } from "react"
 import Glide from "@glidejs/glide"
 
-export default function SliderImg({brandDetail}) {
+export default function SliderImg({ brandDetail }) {
   useEffect(() => {
     const slider = new Glide(".glide-02", {
       type: "carousel",
@@ -34,9 +34,10 @@ export default function SliderImg({brandDetail}) {
     <>
       {/*<!-- Component: Carousel with indicators inside --> */}
       <div className="glide-02 relative w-full lg:mx-auto mx-auto">
+        <h2 className="text-4xl text-center my-16">Our Latest Collection</h2>
         {/*    <!-- Slides --> */}
         <div className="overflow-hidden" data-glide-el="track">
-          <ul className="whitespace-no-wrap w-full h-full flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
+          <ul className="whitespace-no-wrap w-full h-full flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-10">
             <li>
               <img
                 src={brandDetail.img1_url}
@@ -67,7 +68,7 @@ export default function SliderImg({brandDetail}) {
                 className="m-auto max-h-full h-full w-full max-w-full"
               />
             </li>
-        
+
           </ul>
         </div>
         {/*    <!-- Indicators --> */}

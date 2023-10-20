@@ -1,23 +1,57 @@
+import Swal from "sweetalert2";
 
 const ShowCart = ({ showCart, carts }) => {
 
-
-    // console.log(carts._id);
-    // console.log(showCart.id);
+console.log(carts);
+console.log(showCart);
 
 
 
     const addCart = carts.filter(cart => cart._id == showCart.id)
-    console.log(addCart);
+
+// console.log(addCart);
 
 
+    const handleDelete = _id => {
+        console.log(_id);
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // console.log(result);
+                fetch(`http://localhost:5000/cart/${_id}`, {
+                    method: 'DELETE'
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        // console.log(data);
+                        if (data.deletedCount > 0) {
+                            Swal.fire(
+                                'Deleted!',
+                                'Your file has been deleted.',
+                                'success'
+                            )
+                        }
 
+                    })
+
+
+            }
+        })
+
+    }
 
 
 
     return (
+
         <div>
-            <div>
             {
                 addCart.map(shoWaddCart => (<div key={shoWaddCart._id}>
 
@@ -25,15 +59,19 @@ const ShowCart = ({ showCart, carts }) => {
                         <figure className="relative">
                             <img src={shoWaddCart.image} alt="card image" className="aspect-video w-full" />
                             <figcaption className="absolute bottom-0 left-0 w-full p-6 text-white bg-gradient-to-t from-slate-900">
-                                <h3 className="text-lg font-medium ">{shoWaddCart.brandName}</h3>
-                                <p className="text-sm opacity-75">{shoWaddCart.name}</p>
+                                <h3 className="text-2xl font-medium ">{shoWaddCart.brandName}</h3>
+                                <p className="my-2 opacity-75">{shoWaddCart.name}</p>
+                                <button
+                                    onClick={() => handleDelete(showCart._id)}
+                                    className="btn border-0 inline-block px-6 py-3 mr-3 font-bold text-center text-white uppercase align-middle transition-all rounded-lg cursor-pointer bg-gradient-to-tl from-purple-700 to-pink-500 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 hover:scale-102 active:opacity-85 hover:shadow-soft-xs">Delete Product
+                                </button>
                             </figcaption>
                         </figure>
                     </div>
                 </div>))
             }
         </div>
-        </div>
+
     );
 };
 

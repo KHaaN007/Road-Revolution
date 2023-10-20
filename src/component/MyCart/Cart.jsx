@@ -10,10 +10,9 @@ const Cart = ({ cartId }) => {
 
     const emailFilter = cartId.filter(cartEmail => cartEmail.email == user.email);
 
+ 
 
-
-
-    const [carts, setCarts] = useState([])
+        const [carts, setCarts] = useState([])
 
 
     useEffect(() => {
@@ -33,7 +32,7 @@ const Cart = ({ cartId }) => {
 
 
     return (
-        <div>
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
             {
                 emailFilter.map(showCart => <ShowCart key={showCart._id} showCart={showCart} carts={carts}></ShowCart>)
             }
