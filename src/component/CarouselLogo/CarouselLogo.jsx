@@ -14,15 +14,7 @@ export default function CarouselLogo() {
                     active: "[&>*]:bg-wuiSlate-700",
                 },
             },
-            breakpoints: {
-                1024: {
-                    perView: 2,
-                },
-                640: {
-                    perView: 1,
-                    gap: 36,
-                },
-            },
+           
         }).mount()
 
         return () => {
