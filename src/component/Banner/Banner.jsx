@@ -48,7 +48,7 @@ const Banner = () => {
                     loop
                     muted
                 >
-                    <source className="" src="/public/bannerVideo.mp4" type="video/mp4" />
+                    <source className="" src="/bannerVideo.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div style={overlayStyles}></div>

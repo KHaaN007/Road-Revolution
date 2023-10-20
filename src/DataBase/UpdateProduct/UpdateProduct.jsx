@@ -1,4 +1,5 @@
 import { Link, useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const UpdateProduct = () => {
 
@@ -34,7 +35,7 @@ const UpdateProduct = () => {
 
 
 
-        fetch(`http://localhost:5000/product/${_id}`, {
+        fetch(`https://brand-shop-server-lkkube07x-md-amanat-khans-projects.vercel.app/product/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',
@@ -44,6 +45,13 @@ const UpdateProduct = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+                if (data.modifiedCount > 0) {
+                    Swal.fire(
+                        'Update product Successfully',
+                        'Your file has been deleted.',
+                        'success'
+                    )
+                }
             })
 
 

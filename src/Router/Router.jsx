@@ -47,17 +47,17 @@ const router = createBrowserRouter([
             {
                 path: '/productDetails/:id',
                 element: <PrivateRouter><ProductDetails></ProductDetails></PrivateRouter>,
-                loader: ({ params }) => fetch(`http://localhost:5000/product/${params.id}`)
+                loader: ({ params }) => fetch(`https://brand-shop-server-lkkube07x-md-amanat-khans-projects.vercel.app/product/${params.id}`)
             },
             {
                 path: '/updateProduct/:id',
                 element: <UpdateProduct></UpdateProduct>,
-                loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+                loader: ({params}) => fetch(`https://brand-shop-server-lkkube07x-md-amanat-khans-projects.vercel.app/product/${params.id}`)
             },
             {
                 path: `/mycart`,
                 element: <PrivateRouter><MyCart></MyCart></PrivateRouter>,
-                loader: () =>fetch ('http://localhost:5000/cart')
+                loader: () =>fetch ('https://brand-shop-server-lkkube07x-md-amanat-khans-projects.vercel.app/cart')
 
             },
            

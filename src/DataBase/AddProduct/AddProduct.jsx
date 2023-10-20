@@ -24,7 +24,7 @@ const AddProduct = () => {
         console.log(product);
 
 
-        fetch('http://localhost:5000/product', {
+        fetch('https://brand-shop-server-lkkube07x-md-amanat-khans-projects.vercel.app/product', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

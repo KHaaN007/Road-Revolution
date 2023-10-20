@@ -1,19 +1,16 @@
 import Swal from "sweetalert2";
 
-const ShowCart = ({ showCart, carts }) => {
+const ShowCart = ({ showCart, carts, setCarts }) => {
 
-console.log(carts);
-console.log(showCart);
+    console.log(carts);
 
 
 
     const addCart = carts.filter(cart => cart._id == showCart.id)
 
-// console.log(addCart);
-
 
     const handleDelete = _id => {
-        console.log(_id);
+
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -25,12 +22,11 @@ console.log(showCart);
         }).then((result) => {
             if (result.isConfirmed) {
                 // console.log(result);
-                fetch(`http://localhost:5000/cart/${_id}`, {
+                fetch(`https://brand-shop-server-lkkube07x-md-amanat-khans-projects.vercel.app/cart/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
                     .then(data => {
-                        // console.log(data);
                         if (data.deletedCount > 0) {
                             Swal.fire(
                                 'Deleted!',
@@ -40,6 +36,8 @@ console.log(showCart);
                         }
 
                     })
+                const remainig = carts.filter(cart => cart._id !== _id)
+                setCarts(remainig)
 
 
             }
@@ -53,7 +51,7 @@ console.log(showCart);
 
         <div>
             {
-                addCart.map(shoWaddCart => (<div key={shoWaddCart._id}>
+                addCart && addCart.map(shoWaddCart => (<div key={shoWaddCart._id}>
 
                     <div className="overflow-hidden bg-white rounded shadow-md text-slate-500 shadow-slate-200">
                         <figure className="relative">
