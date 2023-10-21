@@ -1,5 +1,3 @@
-import CarouselIndicatorsInside from "../CarouselIndicatorsInside/CarouselIndicatorsInside";
-
 
 
 const Banner = () => {

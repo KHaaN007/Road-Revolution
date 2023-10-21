@@ -11,11 +11,11 @@ const ProductDetails = () => {
 
 
     const { user } = useContext(AuthContext)
-    
-    const handleAddCart = ( ) => {
-   
+
+    const handleAddCart = () => {
+
         const email = user.email
-    
+
         const { id, name, image, brandName, type, price, shortDescription, rating } = details;
 
 
@@ -82,7 +82,7 @@ const ProductDetails = () => {
                         <div className="flex text-white flex-col w-1/2 space-y-4">
                             <div className="flex justify-between items-start">
                                 <h2 className="text-5xl font-mono  font-bold">{details.name}</h2>
-                                <div className="bg-yellow-400 font-bold rounded-xl p-2">{details.rating}</div>
+                                <div className="absolute right-5 bg-yellow-400 font-bold rounded-xl p-2">{details.rating}</div>
                             </div>
                             <div>
                                 <div className="text-4xl my-3 font-semibold ">{details.brandName}</div>
@@ -91,7 +91,10 @@ const ProductDetails = () => {
                             <p className=" text-gray-400 text-xl overflow-y-hidden">{details.shortDescription}</p>
                             <div className="flex font-serif text-3xl font-bold text-a">{details.price} USD</div>
 
-                            <button onClick={handleAddCart} className="btn">Add Cart</button>
+
+                            <button onClick={handleAddCart} className="before:ease relative h-12 w-40 overflow-hidden border border-green-500 bg-green-500 text-white shadow-2xl transition-all before:absolute rounded-lg before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-green-500 hover:before:-translate-x-40">
+                                <span relative="relative z-10">ADD Cart</span>
+                            </button>
 
                         </div>
 

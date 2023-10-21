@@ -1,3 +1,5 @@
+import Swal from "sweetalert2";
+
 const AddProduct = () => {
 
     const handleAddProduct = e => {
@@ -21,7 +23,7 @@ const AddProduct = () => {
             rating,
         }
 
-        console.log(product);
+        // console.log(product);
 
 
         fetch('https://brand-shop-server-lkkube07x-md-amanat-khans-projects.vercel.app/product', {
@@ -34,6 +36,13 @@ const AddProduct = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+                if(data.insertedId){
+                    Swal.fire(
+                      
+                        'Added Product Succesfully.',
+                        
+                        )
+                }
             })
 
 

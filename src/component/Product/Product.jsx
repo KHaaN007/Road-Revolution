@@ -30,7 +30,7 @@ const Product = ({ product }) => {
                                                     {product.name}
                                                 </p>
                                             </div>
-                                            <div className="text-gray-400 font-semibold text-xl mb-4">07</div>
+                                            <div className="text-white font-semibold text-xl mb-4">{product.brandName}</div>
                                             <div className="absolute border-gray-400 border-t-4 bottom-0 py-1 px-4 w-4/5"></div>
                                         </div>
                                         <div className="col-span-12 sm:col-span-12 md:col-span-5 lg:col-span-5 xxl:col-span-5">
@@ -43,14 +43,20 @@ const Product = ({ product }) => {
 
                                                     <div className="bottom-0 flex absolute p-2 right-0">
                                                         <Link to={`/updateProduct/${product._id}`}>
-                                                            <button className="btn inline-block px-6 py-3 mr-3 font-bold text-center text-white uppercase align-middle transition-all rounded-lg cursor-pointer bg-gradient-to-tl from-purple-700 to-pink-500 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md btn-sm bg-150 bg-x-25 hover:scale-102 active:opacity-85 hover:shadow-soft-xs">Update</button>
+
+                                                            <button className="relative mr-10 flex h-[50px] w-32 items-center justify-center overflow-hidden bg-gray-800 text-white rounded-lg shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-orange-600 before:duration-500 before:ease-out hover:shadow-orange-600 hover:before:h-56 hover:before:w-56">
+                                                                <span className="relative z-10">Update</span>
+                                                            </button>
                                                         </Link>
+
+
+
                                                         <Link to={`/productdetails/${product._id}`}>
-                                                            <button className="opacity-50 bg-gray-100 hover:bg-sky-200 hover:text-white text-sm font-bold pl-2 rounded inline-flex items-center">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                                </svg>
-                                                                <span className="btn font-bold">Details</span>
+                                                         
+
+
+                                                            <button className="before:ease relative h-12 w-32 overflow-hidden border border-green-500 bg-green-500 text-white shadow-2xl transition-all before:absolute rounded-lg before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-green-500 hover:before:-translate-x-40">
+                                                                <span relative="relative z-10">Details</span>
                                                             </button>
                                                         </Link>
                                                     </div>

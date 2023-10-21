@@ -68,7 +68,7 @@ const MyCart = () => {
     return (
         <div>
 
-            <div className="grid grid-cols-3 gap-10">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-10">
                 {
                     userCart && userCart.map(cart => (<div key={cart._id}>
 
