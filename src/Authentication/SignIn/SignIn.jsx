@@ -3,6 +3,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
+import NavBar from "../../component/NavBar/NavBar";
 
 const SignIn = () => {
 
@@ -87,14 +88,14 @@ const SignIn = () => {
 
     return (
         <div>
-
+<NavBar></NavBar>
             <div data-aos="zoom-in"
                 data-aos-duration="3000">
                 {/* <!-- component --> */}
                 <div className="bg-gray-100 flex justify-center items-center h-screen">
                     {/* <!-- Left: Image --> */}
                     <div className="w-1/2 h-screen hidden lg:block">
-                        <img src="https://images.unsplash.com/photo-1616763355603-9755a640a287?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Placeholder Image" className="object-cover w-full h-full" />
+                        <img src="https://wallpaperaccess.com/full/1600570.jpg" alt="Placeholder Image" className="object-cover w-full h-full" />
                     </div>
                     {/* <!-- Right: Login Form --> */}
                     <div className="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">

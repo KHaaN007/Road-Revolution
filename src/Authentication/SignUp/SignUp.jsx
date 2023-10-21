@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { Link } from "react-router-dom";
+import NavBar from "../../component/NavBar/NavBar";
 
 const SignUp = () => {
 
@@ -80,14 +81,14 @@ const SignUp = () => {
     return (
         <div>
 
-
+            <NavBar></NavBar>
             <div data-aos="zoom-in"
                 data-aos-duration="3000">
                 {/* <!-- component --> */}
                 <div className="bg-gray-100 flex justify-center flex-row-reverse items-center h-screen">
                     {/* <!-- Left: Image --> */}
                     <div className="w-1/2 h-screen hidden lg:block">
-                        <img src="https://i.ibb.co/MSYXtmy/register-now-banner-vector-686319-746.jpg3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Placeholder Image" className="object-cover w-full h-full" />
+                        <img src="https://wallpaperaccess.com/full/1600570.jpg" alt="Placeholder Image" className="object-cover w-full h-full" />
                     </div>
                     {/* <!-- Right: Register Form --> */}
                     <div className="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">

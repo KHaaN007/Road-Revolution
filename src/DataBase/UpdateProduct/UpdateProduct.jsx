@@ -1,5 +1,6 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import NavBar from "../../component/NavBar/NavBar";
 
 const UpdateProduct = () => {
 
@@ -65,6 +66,7 @@ const UpdateProduct = () => {
 
     return (
         <div>
+            <NavBar></NavBar>
             <div className="container  mx-auto shadow-2xl p-10 rounded-2xl">
                 {/* <!-- Component: Rounded basic input  --> */}
 

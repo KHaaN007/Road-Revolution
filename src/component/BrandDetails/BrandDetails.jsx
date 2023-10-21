@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import SliderImg from '../SliderImg/SliderImg';
 import ProductCard from '../ProductCard/ProductCard';
+import NavBar from '../NavBar/NavBar';
 
 const BrandDetails = () => {
     const [brandDetail, setbrandDetail] = useState({})
@@ -22,7 +23,7 @@ const BrandDetails = () => {
 
     return (
         <div>
-
+            <NavBar></NavBar>
             {
                 <SliderImg brandDetail={brandDetail}></SliderImg>
             }

@@ -1,10 +1,10 @@
 import { Outlet } from 'react-router-dom';
-import NavBar from '../component/NavBar/NavBar';
+// import NavBar from '../component/NavBar/NavBar';
 
 const RootLayout = () => {
     return (
         <div>
-            <NavBar></NavBar>
+            {/* <NavBar></NavBar> */}
             <Outlet></Outlet>
             
         </div>

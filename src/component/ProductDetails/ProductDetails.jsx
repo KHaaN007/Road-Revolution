@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 import Swal from "sweetalert2";
+import NavBar from "../NavBar/NavBar";
 
 
 const ProductDetails = () => {
@@ -71,7 +72,7 @@ const ProductDetails = () => {
 
 
 
-
+<NavBar></NavBar>
             <div style={{ backgroundImage: `url(${details.image})` }} className="w-full  rounded-3xl flex lg:flex-co justify-center ">
 
                 <div className=" sm:mx-auto">

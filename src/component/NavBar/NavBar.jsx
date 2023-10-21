@@ -11,30 +11,30 @@ const NavBar = () => {
                 <NavLink
                     to="/"
                     className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "bg-gray-300 block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased rounded-md" : "block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
-                    }
-                >
-                    Home
+                    isPending ? "pending" : isActive ? "before:ease relative  px-1 py-1 overflow-hidden border border-indigo-500 bg-indigo-500 text-white  transition-all before:absolute before:right-0 before:top-0  text-sm font-normal before:w-6 before:translate-x-12 before:rotate-6  before:opacity-10 before:duration-700 hover:shadow-green-500 hover:before:-translate-x-40   " : "block p-1 font-sans text-sm font-normal text-inherit antialiased      "
+                }
+            >
+                <span relative="relative z-10">Home</span>
                 </NavLink>
             </li>
             <li>
                 <NavLink
                     to="/addproduct"
                     className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "bg-gray-300 block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased rounded-md" : "block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
+                        isPending ? "pending" : isActive ? "before:ease relative  px-1 py-1 overflow-hidden border border-indigo-500 bg-indigo-500 text-white  transition-all before:absolute before:right-0 before:top-0  text-sm font-normal before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-green-500 hover:before:-translate-x-40   " : "block p-1 font-sans text-sm font-normal text-inherit antialiased      "
                     }
                 >
-                    Add Product
+                    <span relative="relative z-10">ADD Product</span>
                 </NavLink>
             </li>
             <li>
                 <NavLink
                     to="/mycart"
                     className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "bg-gray-300 block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased rounded-md" : "block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
-                    }
-                >
-                    My Cart
+                    isPending ? "pending" : isActive ? "before:ease relative  px-1 py-1 overflow-hidden border border-indigo-500 bg-indigo-500 text-white  transition-all before:absolute before:right-0 before:top-0  text-sm font-normal before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-green-500 hover:before:-translate-x-40 " : "block p-1 font-sans text-sm font-normal text-inherit antialiased "
+                }
+            >
+                <span relative="relative z-10">My Cart</span>
                 </NavLink>
             </li>
      
@@ -52,18 +52,18 @@ const NavBar = () => {
     return (
         <div className="mx-auto">
 
-            <div className="navbar bg-base-100">
+            <div className="navbar ">
                 <div className="flex">
                     <Link
                         to='/'
                         href="#"
-                        className="mr-4 block cursor-pointer py-1.5 font-sans lg:text-3xl md:text-3xl text-2xl  font-medium leading-relaxed text-inherit antialiased"
+                        className="mr-5 block cursor-pointer py-1.5 font-sans lg:text-3xl md:text-3xl text-2xl  font-medium leading-relaxed text-inherit antialiased"
                     >
                         Road Revolution
                     </Link>
 
                     <div className='flex justify-center items-center text-center'>
-                        <img className='w-20 ' src="https://i.ibb.co/0r5YFTs/Black-And-White-Modern-Car-Wash-Logo-removebg-preview.png" alt="" />
+                        <img className='w-20' src="https://i.ibb.co/0r5YFTs/Black-And-White-Modern-Car-Wash-Logo-removebg-preview.png" alt="" />
                     </div>
                 </div>
                 <div className="navbar-start">
@@ -77,7 +77,7 @@ const NavBar = () => {
                                 <NavLink
                                 onClick={logoutUser}
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "bg-gray-300 block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased rounded-md" : "block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
+                                    isPending ? "pending" : isActive ? "bg-gray-300 block p-1 font-sans text-sm font-normal  text-inherit antialiased rounded-md" : "block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
                                 }
                             >
                                 Logout
@@ -86,7 +86,7 @@ const NavBar = () => {
                             <NavLink
                                 to="/login"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "bg-gray-300 block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased rounded-md" : "block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
+                                    isPending ? "pending" : isActive ? "bg-gray-300 block p-1 font-sans text-sm font-normal  text-inherit antialiased rounded-md" : "block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
                                 }
                             >
                                 Login

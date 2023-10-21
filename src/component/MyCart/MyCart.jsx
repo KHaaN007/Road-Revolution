@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
+import NavBar from "../NavBar/NavBar";
 
 
 
@@ -67,7 +68,7 @@ const MyCart = () => {
 
     return (
         <div>
-
+<NavBar></NavBar>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-10">
                 {
                     userCart && userCart.map(cart => (<div key={cart._id}>
