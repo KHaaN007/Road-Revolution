@@ -39,7 +39,7 @@ const Home = () => {
                             className={`absolute top-8 left-[850px]  bg-${currentTheme === 'dark' ? 'black-700' : 'gray-100'} w-10 text-sm rounded-md border-2  border-purple-400 hover:bg-${currentTheme === 'dark' ? 'black' : 'gray-300'}`}
                             onClick={toggleTheme}
                         >
-                            {currentTheme === 'dark' ? 'Dark' : 'Light'}
+                            {currentTheme === 'dark' ? '☼' : '☾'}
                         </button>
                     </div>
                 </header>
