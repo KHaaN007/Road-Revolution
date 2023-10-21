@@ -21,7 +21,7 @@ const ShowCart = ({ showCart, carts, setCarts }) => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                // console.log(result);
+                
                 fetch(`https://brand-shop-server-lkkube07x-md-amanat-khans-projects.vercel.app/cart/${_id}`, {
                     method: 'DELETE'
                 })

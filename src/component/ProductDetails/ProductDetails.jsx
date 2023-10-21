@@ -11,19 +11,26 @@ const ProductDetails = () => {
 
 
     const { user } = useContext(AuthContext)
-
-    const handleAddCart = _id => {
-        console.log(_id);
-        console.log();
+    
+    const handleAddCart = ( ) => {
+   
         const email = user.email
-        const id = _id
+    
+        const { id, name, image, brandName, type, price, shortDescription, rating } = details;
 
 
+        console.log(id, name, image, brandName, type, price, shortDescription, rating, email);
 
-
-        const productId = {
+        const productDetails = {
             id,
-            email
+            name,
+            image,
+            brandName,
+            type,
+            price,
+            shortDescription,
+            rating,
+            email,
         }
 
 
@@ -33,22 +40,22 @@ const ProductDetails = () => {
             headers: {
                 'content-type': 'application/json',
             },
-            body: JSON.stringify(productId)
+            body: JSON.stringify(productDetails)
         })
             .then(res => res.json())
             .then(data => {
                 console.log(data);
                 if (data.insertedId) {
-                   
-                Swal.fire({
-                    title: 'Product Added Cart',
-                    showClass: {
-                        popup: 'animate__animated animate__fadeInDown'
-                    },
-                    hideClass: {
-                        popup: 'animate__animated animate__fadeOutUp'
-                    }
-                })
+
+                    Swal.fire({
+                        title: 'Product Added Cart',
+                        showClass: {
+                            popup: 'animate__animated animate__fadeInDown'
+                        },
+                        hideClass: {
+                            popup: 'animate__animated animate__fadeOutUp'
+                        }
+                    })
 
                 }
             })
@@ -61,7 +68,7 @@ const ProductDetails = () => {
 
     return (
         <div>
-            {/* <img src={details.image} alt="" /> */}
+
 
 
 
@@ -84,7 +91,7 @@ const ProductDetails = () => {
                             <p className=" text-gray-400 text-xl overflow-y-hidden">{details.shortDescription}</p>
                             <div className="flex font-serif text-3xl font-bold text-a">{details.price} USD</div>
 
-                            <button onClick={() => handleAddCart(details._id)} className="btn">Add Cart</button>
+                            <button onClick={handleAddCart} className="btn">Add Cart</button>
 
                         </div>
 
@@ -92,7 +99,7 @@ const ProductDetails = () => {
                 </div>
 
             </div>
-            
+
         </div>
     );
 };

@@ -18,8 +18,7 @@ const ProductCard = ({ brandDetail }) => {
 
 
     const filterProduct = products.filter(product => product.brandName === name)
-    // console.log(products);
-    // console.log(filterProduct);
+    
 
     return (
         <div>
